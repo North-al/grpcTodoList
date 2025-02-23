@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/North-al/grpcTodoList/TodoListUser/internal/api/gen";
+
+message UserRegisterRequest  {
+  string Username = 1;
+  string Nickname = 2;
+  string Password = 3;
+  string ConfirmPassword = 4;
+}
+
+message UserRegisterResponse {
+  uint32 UserId = 1;
+}
+
+message UserLoginRequest {
+  string Username = 1;
+  string Password = 2;
+}
+
+message UserLoginResponse {
+  string Token = 1;
+}
+
+service UserService {
+  rpc Login(UserLoginRequest) returns (UserLoginResponse);
+  rpc Register(UserRegisterRequest) returns (UserRegisterResponse);
+}

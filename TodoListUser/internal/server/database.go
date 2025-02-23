@@ -2,6 +2,7 @@ package server
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
@@ -47,6 +48,16 @@ func InitDatabase() {
 	if err != nil {
 		panic(fmt.Errorf("failed to connect database: %v", err))
 	}
+
+	// DB = db
+	dbPool, err := db.DB()
+	if err != nil {
+		panic(fmt.Errorf("failed to get DB Pool: %v", err))
+	}
+
+	dbPool.SetMaxIdleConns(20)
+	dbPool.SetMaxOpenConns(100)
+	dbPool.SetConnMaxLifetime(30 * time.Second)
 
 	DB = db
 }
