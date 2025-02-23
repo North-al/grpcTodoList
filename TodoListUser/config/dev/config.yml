@@ -1,0 +1,12 @@
+application:
+  name: "TODO List User Module"
+  port: 3000
+
+database:
+  host: "localhost"
+  port: 3306
+  name: "grpc-todo-list"
+  username: "root"
+  password: "123456"
+
+
