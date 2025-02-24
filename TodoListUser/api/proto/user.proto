@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package pb;
 
-option go_package = "github.com/North-al/grpcTodoList/TodoListUser/internal/api/gen";
+option go_package = "./user";
 
 message UserRegisterRequest  {
   string Username = 1;
