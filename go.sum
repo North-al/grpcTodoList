@@ -1,3 +1,5 @@
+github.com/North-al/grpcTodoList/TodoListUser v0.0.0-20250224102803-2e7f0adebc12 h1:nvH0P3RzAmJxaecaiomjgVYfV5Esm6KKuRaGcI1XFCE=
+github.com/North-al/grpcTodoList/TodoListUser v0.0.0-20250224102803-2e7f0adebc12/go.mod h1:1v5gGJ6iJOSGvHE93AG58WYnjgHcwCCOfuREc15Ni94=
 github.com/bytedance/sonic v1.11.6 h1:oUp34TzMlL+OY1OUWxHqsdkgC/Zfc85zGqw9siXjrc0=
 github.com/bytedance/sonic v1.11.6/go.mod h1:LysEHSvpvDySVdC2f87zGWf6CIKJcAvqab1ZaiQtds4=
 github.com/bytedance/sonic/loader v0.1.1 h1:c+e5Pt1k/cy5wMveRDyk2X4B9hF4g7an8N3zCYjJFNM=

@@ -1,8 +1,9 @@
-module github.com/North-al/grpcTodoList/TodoListUser
+module github.com/North-al/grpcTodoList
 
 go 1.23.0
 
 require (
+	github.com/North-al/grpcTodoList/TodoListUser v0.0.0-20250224102803-2e7f0adebc12
 	github.com/gin-gonic/gin v1.10.0
 	github.com/spf13/viper v1.19.0
 	gorm.io/driver/mysql v1.5.7

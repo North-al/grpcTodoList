@@ -1,5 +1,5 @@
 CreateUserProto:
-	protoc -I=TodoListUser/api/proto \
+	protoc -I=app/user/api/proto \
 		--go_out=./gen \
 		--go-grpc_out=./gen \
-		./TodoListUser/api/proto/user.proto
+		./app/user/api/proto/user.proto

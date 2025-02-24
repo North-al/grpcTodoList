@@ -3,8 +3,8 @@ package migration
 import (
 	"fmt"
 
-	"github.com/North-al/grpcTodoList/TodoListUser/internal/data/models"
-	"github.com/North-al/grpcTodoList/TodoListUser/internal/server"
+	"github.com/North-al/grpcTodoList/app/user/internal/data/models"
+	"github.com/North-al/grpcTodoList/app/user/internal/server"
 )
 
 func Migration() {
